@@ -41,7 +41,7 @@ export class ProductsAdminComponent extends BaseTableLoader implements OnInit {
   }
 
   public onSave(product: Product): void {
-    product.id ? this.update(product) : this.create(product);
+    this.create(product);
   }
 
   private create(product: Product): void {
